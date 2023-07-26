@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 10px;
+            width: 300px;
+        }
+
+        input, button {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        label {
+            font-size: 16px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        #minWordCount {
+            width: 60px;
+        }
+
+        #saveButton {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        #saveButton:hover {
+            background-color: #777;
+        }
+
+        .option-row {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="option-row">
+        <label for="minWordCount">Min word count:</label>
+        <input type="number" id="minWordCount" name="minWordCount" min="1">
+        <button id="saveButton">Save</button>
+    </div>
+    <p>Current minimum word count: <span id="currentMinWordCount"></span></p>
+    <script src="options.js"></script>
+</body>
+</html>
